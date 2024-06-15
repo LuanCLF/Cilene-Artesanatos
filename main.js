@@ -1,4 +1,4 @@
-// lightbox.js
+
 const images = document.querySelectorAll("img[data-src]");
 
 images.forEach((img) => {
@@ -9,8 +9,6 @@ images.forEach((img) => {
 });
 
 function openLightbox(src) {
-  // Lógica para exibir a imagem ampliada (por exemplo, em uma sobreposição)
-  // Você pode criar uma sobreposição personalizada ou usar uma biblioteca como Lightbox2.
-  // Exemplo simplificado:
-  window.open(src, "_blank"); // Abre a imagem em uma nova guia
+ 
+  window.open(src, "_blank");
 }
