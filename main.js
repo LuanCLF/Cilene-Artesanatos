@@ -1,4 +1,3 @@
-
 const images = document.querySelectorAll("img[data-src]");
 
 images.forEach((img) => {
@@ -9,6 +8,6 @@ images.forEach((img) => {
 });
 
 function openLightbox(src) {
- 
+  
   window.open(src, "_blank");
 }
