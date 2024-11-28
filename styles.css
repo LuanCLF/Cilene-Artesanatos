@@ -92,8 +92,26 @@
   text-decoration: none;
   list-style: none;
 
+  text-decoration: none;
+  list-style: none;
+
   font-family: "Lato", sans-serif;
   font-weight: var(--font-normal);
+
+  font-size: 62.5%;
+}
+
+h1,
+h2 {
+  line-height: var(--line-title);
+  letter-spacing: var(--letter-title);
+
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: var(--font-h1);
+  font-weight: 900;
 
   font-size: 62.5%;
 }
@@ -118,12 +136,33 @@ h2 {
   font-weight: 800;
 
   margin-bottom: 3rem;
+  margin-bottom: 4.5rem;
+}
+
+h2 {
+  font-size: var(--font-h2);
+  font-weight: 800;
+
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-size: var(--font-h3);
   font-weight: 600;
+  font-size: var(--font-h3);
+  font-weight: 600;
 
+  margin-bottom: 2.5rem;
+}
+
+p,
+a,
+button,
+span,
+li,
+blockquote {
+  line-height: var(--line-body);
+  letter-spacing: var(--letter-body);
   margin-bottom: 2.5rem;
 }
 
@@ -144,8 +183,20 @@ p {
 }
 
 a {
+  font-size: var(--font-p);
+
+  margin-bottom: 2rem;
+}
+
+a {
   color: inherit;
 
+  font-size: var(--font-a);
+  font-weight: 700;
+}
+
+blockquote {
+  font-size: var(--font-p);
   font-size: var(--font-a);
   font-weight: 700;
 }
@@ -162,12 +213,17 @@ button {
 
   background-color: var(--color-btn);
   color: var(--color-light);
+  background-color: var(--color-btn);
+  color: var(--color-light);
 
+  padding: 1.5rem 2.5rem;
   padding: 1.5rem 2.5rem;
   border: none;
   border-radius: 1rem;
+  border-radius: 1rem;
 
   &:hover {
+    background-color: var(--color-btn-hover);
     background-color: var(--color-btn-hover);
   }
 }
@@ -178,6 +234,7 @@ footer {
 }
 
 header {
+  padding: 1rem 2rem;
   padding: 1rem 2rem;
 
   nav {
@@ -195,7 +252,15 @@ header {
           display: flex;
           flex-direction: column;
           align-items: end;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
 
+          span {
+            width: 30%;
+            border: 1.6px solid var(--color-btn);
+
+            transition: width 0.3s ease;
           span {
             width: 30%;
             border: 1.6px solid var(--color-btn);
@@ -203,11 +268,23 @@ header {
             transition: width 0.3s ease;
           }
 
+
           img {
+            width: 6.5rem;
             width: 6.5rem;
             height: auto;
 
             object-fit: cover;
+
+            @media (min-width: 768px) {
+              width: 8.5rem;
+            }
+          }
+
+          &:hover {
+            span {
+              width: 100%;
+            }
 
             @media (min-width: 768px) {
               width: 8.5rem;
@@ -230,6 +307,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: center;
     align-items: center;
 
     text-align: center;
@@ -238,6 +316,8 @@ main {
 
     background-color: var(--background-color);
 
+    p {
+      max-width: 55rem;
     p {
       max-width: 55rem;
     }
@@ -253,12 +333,18 @@ main {
     p {
       margin-bottom: 5rem;
     }
+    p {
+      margin-bottom: 5rem;
+    }
 
     ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
 
+      gap: 4rem;
+
+      max-width: 120rem;
       gap: 4rem;
 
       max-width: 120rem;
@@ -273,10 +359,14 @@ main {
 
         width: 25rem;
         height: 25rem;
+        width: 25rem;
+        height: 25rem;
 
+        padding: 1rem;
         padding: 1rem;
 
         border: 1px solid var(--detail-color);
+        border-radius: 2rem;
         border-radius: 2rem;
 
         @media (min-width: 768px) {
@@ -287,8 +377,27 @@ main {
         h3 {
           margin-top: 2rem;
           margin-bottom: 1rem;
+        @media (min-width: 768px) {
+          width: 35rem;
+          height: 35rem;
         }
 
+        h3 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 3.2rem;
+          height: 3.2rem;
+
+          @media (min-width: 768px) {
+            width: 4.2rem;
+            height: 4.2rem;
         p {
           margin-bottom: 0;
         }
@@ -311,6 +420,11 @@ main {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    justify-content: space-evenly;
+
+    background-color: var(--background-color);
+
+    gap: 5rem;
 
     background-color: var(--background-color);
 
@@ -318,10 +432,15 @@ main {
 
     div {
       max-width: 60rem;
+      max-width: 60rem;
 
       display: flex;
       flex-direction: column;
       align-items: start;
+
+      @media (min-width: 1350px) {
+        width: 75rem;
+      }
 
       @media (min-width: 1350px) {
         width: 75rem;
@@ -334,11 +453,17 @@ main {
         gap: 2rem;
 
         margin-bottom: 4rem;
+        gap: 2rem;
+
+        margin-bottom: 4rem;
         li {
           p {
             display: flex;
             align-items: center;
 
+            gap: 0.5rem;
+
+            margin-bottom: 0;
             gap: 0.5rem;
 
             margin-bottom: 0;
@@ -353,17 +478,24 @@ main {
       object-fit: cover;
 
       border-radius: 2rem;
+      border-radius: 2rem;
 
       cursor: zoom-in;
 
+      @media (min-width: 550px) {
+        width: 45rem;
       @media (min-width: 550px) {
         width: 45rem;
       }
 
       @media (min-width: 768px) {
         width: 55rem;
+      @media (min-width: 768px) {
+        width: 55rem;
       }
 
+      @media (min-width: 1350px) {
+        width: 60rem;
       @media (min-width: 1350px) {
         width: 60rem;
       }
@@ -379,6 +511,9 @@ main {
     p {
       margin-bottom: 5rem;
     }
+    p {
+      margin-bottom: 5rem;
+    }
 
     ul {
       display: flex;
@@ -388,7 +523,15 @@ main {
       margin-bottom: 8rem;
 
       gap: 4rem;
+      margin-bottom: 8rem;
+
+      gap: 4rem;
       li {
+        img {
+          width: 30rem;
+          height: 30rem;
+
+          border-radius: 1rem;
         img {
           width: 30rem;
           height: 30rem;
@@ -397,9 +540,16 @@ main {
 
           transition: transform 0.3s ease;
           object-fit: cover;
+          transition: transform 0.3s ease;
+          object-fit: cover;
 
           cursor: zoom-in;
+          cursor: zoom-in;
 
+          &:hover {
+            transform: scale(1.1);
+
+            border-radius: 1rem;
           &:hover {
             transform: scale(1.1);
 
@@ -419,12 +569,18 @@ footer {
   text-align: center;
 
   gap: 3rem;
+  gap: 3rem;
 
   height: max-content;
 
   background-color: var(--color-dark);
   color: var(--color-light);
+  background-color: var(--color-dark);
+  color: var(--color-light);
 
+  p {
+    margin-top: 3rem;
+  }
   p {
     margin-top: 3rem;
   }
@@ -435,12 +591,14 @@ footer {
     justify-content: center;
 
     gap: 3rem;
+    gap: 3rem;
 
     button {
       a {
         display: flex;
         align-items: center;
 
+        gap: 1rem;
         gap: 1rem;
       }
     }
