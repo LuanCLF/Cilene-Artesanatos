@@ -3,23 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cilene Artesanatos oferece produtos de MDF personalizados, transformando festas e eventos em momentos inesquecíveis com design e qualidade superior."
+    />
+    <meta name="author" content="Cilene Artesanatos" />
+    <meta
+      name="keywords"
+      content="artesanato, MDF, decoração, festas, eventos, presentes personalizados, qualidade, design exclusivo"
+    />
+
+    <meta
+      property="og:title"
+      content="Cilene Artesanatos - Produtos em MDF Personalizados"
+    />
+    <meta
+      property="og:description"
+      content="Transforme seus momentos especiais com nossos produtos de MDF únicos e personalizados para festas e eventos."
+    />
+    <meta
+      property="og:image"
+      content="https://cilene-artesanatos.vercel.app/images/logo.jpg"
+    />
+    <meta property="og:url" content="https://cilene-artesanatos.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cilene Artesanatos - Produtos em MDF Personalizados"
+    />
+    <meta
+      name="twitter:description"
+      content="Transforme seus momentos especiais com nossos produtos de MDF únicos e personalizados."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cilene-artesanatos.vercel.app/images/og-image.jpg"
+    />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
-    <script src="./main.js" defer></script>
 
-    <title>Cilene Artesantos</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="./images/logo.jpg" as="image" />
+
+    <title>Cilene Artesanatos - Produtos de MDF Personalizados</title>
+
+    <script src="./main.js" defer></script>
   </head>
+
   <body>
     <header>
-      <nav>
+      <nav aria-label="Menu principal">
         <ul>
           <li>
             <a id="logo" href="index.html"
-              ><img src="./images/logo.jpg" alt="logo da página"
+              ><img src="./images/logo.jpg" alt="Logo Cilene Artesanatos"
             /></a>
           </li>
-          <li><a href="#contact">Contato</a></li>
+          <li>
+            <a href="#contact">Contato <span></span></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -27,240 +74,233 @@
       <section id="hero">
         <h1>Cilene Artesanatos</h1>
         <p>
-          Descubra como nossos produtos MDF podem transformar suas festas e
-          comemorações em momentos inesquecíveis.
+          Surpreenda-se com peças exclusivas e personalizadas em MDF que tornam
+          qualquer ocasião inesquecível!
         </p>
-        <button><a href="#products">Conheça Mais</a></button>
+        <button><a href="#products">Descubra Mais</a></button>
       </section>
+
       <section id="differences">
         <h2>Nossos Diferenciais</h2>
-        <p>
-          Conheça os aspectos que tornam nossos produtos únicos e especiais.
-        </p>
+        <p>Por que Escolher Cilene Artesanatos?</p>
         <ul>
           <li>
-            <span><img src="./icons/star.svg" alt="ícone de estrela" /></span>
-            <h3>Qualidade Superior</h3>
+            <span><img src="./icons/star.svg" alt="" /></span>
+            <h3>Excelência em Cada Detalhe</h3>
             <p>
-              Produtos feitos com os melhores materiais e acabamento impecável.
+              Peças trabalhadas com perfeição para oferecer produtos que
+              encantam e impressionam.
             </p>
           </li>
           <li>
-            <span><img src="./icons/heart.svg" alt="ícone de coração" /></span>
-            <h3>Design Encantador</h3>
-            <p>Cada peça é criada com um toque de magia e criatividade.</p>
-          </li>
-          <li>
-            <span><img src="./icons/gift.svg" alt="ícone de pincel" /></span>
-            <h3>Personalização</h3>
+            <span><img src="./icons/heart.svg" alt="" /></span>
+            <h3>Design que Inspira Emoções</h3>
             <p>
-              Oferecemos opções de personalização para tornar cada item único.
+              Transformamos ideias em arte, com criações cheias de significado e
+              beleza.
             </p>
           </li>
           <li>
-            <span
-              ><img src="./icons/security.svg" alt="ícone de segurança"
-            /></span>
-            <h3>Segurança</h3>
+            <span><img src="./icons/gift.svg" alt="" /></span>
+            <h3>Personalização Incomparável</h3>
             <p>
-              Produtos seguros e adequados para todas as idades, especialmente
-              bebês.
+              Crie algo verdadeiramente seu: adaptamos nossas peças ao seu gosto
+              e necessidade.
             </p>
           </li>
           <li>
             <span
-              ><img
-                src="./icons/hand-heart.svg"
-                alt="ícone de mão segurando um coração"
+              ><img src="./icons/security.svg" alt=""
             /></span>
-            <h3>Atendimento Amigável</h3>
-            <p>Nossa equipe está sempre pronta para ajudar com um sorriso.</p>
+            <h3>Confiança e Segurança</h3>
+            <p>
+              Produtos adequados para todas as idades, com qualidade e segurança
+              garantidas.
+            </p>
+          </li>
+          <li>
+            <span
+              ><img src="./icons/hand-heart.svg" alt=""
+            /></span>
+            <h3>Atendimento de Excelência</h3>
+            <p>
+              Dedicação em entender suas necessidades e superar suas
+              expectativas.
+            </p>
           </li>
         </ul>
       </section>
+
       <section id="request">
         <div>
-          <h2>Faça Seu Pedido Agora</h2>
+          <h2>Transforme Sua Ideia em Realidade</h2>
           <p>
-            Entre em contato conosco e descubra como podemos ajudar a tornar seu
-            evento especial com nossos produtos MDF encantadores.
+            Criamos peças artesanais em MDF que se adaptam a todas as ocasiões.
+            Seja para festas, decoração ou presentes, cada item é feito sob
+            medida para você.
           </p>
-
+          <p>Nossos produtos incluem:</p>
           <ul>
             <li>
               <p>
-                <img src="./icons/check.svg" alt="ícone de check" /> Produtos
-                Personalizados
+                <img src="./icons/check.svg" alt="" />
+                Lembrancinhas de Aniversário
               </p>
             </li>
             <li>
               <p>
-                <img src="./icons/check.svg" alt="ícone de check" /> Qualidade
-                Garantida
+                <img src="./icons/check.svg" alt="" />
+                Decorações de Casamento
               </p>
             </li>
             <li>
               <p>
-                <img src="./icons/check.svg" alt="ícone de check" /> Atendimento
-                Dedicado
+                <img src="./icons/check.svg" alt="" />
+                Decoração de Quartos de Bebê
+              </p>
+            </li>
+            <li>
+              <p>
+                <img src="./icons/check.svg" alt="" />
+                Chá de Bebê
               </p>
             </li>
           </ul>
-
-          <button><a href="#contact">Entre em Contato</a></button>
+          <p>
+            Cada peça é feita com atenção aos detalhes, garantindo beleza,
+            qualidade e um toque especial que só o artesanal pode oferecer.
+          </p>
+          <button><a href="#contact">Peça Agora</a></button>
         </div>
         <figure>
           <img
             id="main-img"
             src="./images/img7.png"
-            alt="foto de um produto"
+            alt="Produto MDF personalizado"
             data-src="./images/img7.png"
           />
         </figure>
       </section>
+
       <section id="products">
-        <h2>Galeria de Produtos</h2>
-        <p>Explore nossa galeria e inspire-se com nossas criações em MDF.</p>
+        <h2>Inspirações em MDF</h2>
         <p>
-          Cada peça é feita com carinho e dedicação para tornar seus momentos
-          especiais ainda mais mágicos.
+          Veja alguns dos produtos que já criamos para nossos clientes e
+          inspire-se para sua próxima encomenda.
         </p>
 
         <ul>
           <li>
-            <figure>
-              <img
-                src="./images/img1.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img1.png"
-              />
-            </figure>
+            <img
+              src="./images/img1.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img1.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img2.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img2.png"
-              />
-            </figure>
+            <img
+              src="./images/img2.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img2.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img3.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img3.png"
-              />
-            </figure>
+            <img
+              src="./images/img3.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img3.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img4.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img4.png"
-              />
-            </figure>
+            <img
+              src="./images/img4.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img4.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img5.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img5.png"
-              />
-            </figure>
+            <img
+              src="./images/img5.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img5.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img6.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img6.png"
-              />
-            </figure>
+            <img
+              src="./images/img6.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img6.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img7.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img7.png"
-              />
-            </figure>
+            <img
+              src="./images/img7.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img7.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img8.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img8.png"
-              />
-            </figure>
+            <img
+              src="./images/img8.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img8.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img9.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img9.png"
-              />
-            </figure>
+            <img
+              src="./images/img9.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img9.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img10.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img10.png"
-              />
-            </figure>
+            <img
+              src="./images/img10.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img10.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img11.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img11.png"
-              />
-            </figure>
+            <img
+              src="./images/img11.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img11.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img12.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img12.png"
-              />
-            </figure>
+            <img
+              src="./images/img12.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img12.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img13.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img13.png"
-              />
-            </figure>
+            <img
+              src="./images/img13.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img13.png"
+            />
           </li>
           <li>
-            <figure>
-              <img
-                src="./images/img14.png"
-                alt="foto de um dos produtos"
-                data-src="./images/img14.png"
-              />
-            </figure>
+            <img
+              src="./images/img14.png"
+              alt="Foto de um dos produtos"
+              data-src="./images/img14.png"
+            />
           </li>
         </ul>
+
+        <p>
+          Tem uma ideia diferente do que viu aqui? Sem problemas! Entre em
+          contato conosco e vamos conversar sobre como podemos criar algo único.
+        </p>
       </section>
     </main>
     <footer id="contact">
       <article>
         <button>
           <a href="https://wa.me/message/BQQ3LIJC4MORJ1" target="_blank"
-            ><img src="./icons/whatsapp.svg" alt="ícone do whatsapp" />
+            ><img src="./icons/whatsapp.svg" alt="Ícone do whatsapp" />
             Whatsapp</a
           >
         </button>
@@ -268,7 +308,7 @@
           <a
             href="https://www.instagram.com/cilene_artesanatos/"
             target="_blank"
-            ><img src="./icons/instagram.svg" alt="ícone do instagram" />
+            ><img src="./icons/instagram.svg" alt="Ícone do instagram" />
             Instagram</a
           >
         </button>
@@ -277,6 +317,8 @@
         "A arte não é um trabalho manual, ela é a transmissão de sentimento que
         o artista experimentou.” - Leon Tolstoi
       </blockquote>
+
+      <p>© 2024 Cilene Artesanatos. Todos os direitos reservados.</p>
     </footer>
   </body>
 </html>
